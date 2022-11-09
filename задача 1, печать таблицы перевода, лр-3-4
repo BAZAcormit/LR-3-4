@@ -1,0 +1,7 @@
+program trenirovka;
+begin
+  for var i:=1 to 20 do
+  begin
+    writeln(i , '"   ', 2.54*i, ' sm');
+  end;
+end.
