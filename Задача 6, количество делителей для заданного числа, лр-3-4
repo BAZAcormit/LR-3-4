@@ -1,0 +1,19 @@
+program zadanie_6;
+
+var
+  i, n, u: integer;
+
+begin
+  write('Введите число ');
+  read(n);
+  u := 0;
+  i := -n;
+  while i <= n do
+  begin
+    if i <> 0 then
+      if n mod i = 0 then
+        u += 1;
+    i += 1;
+  end;
+  write('', u);
+end.
