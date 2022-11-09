@@ -1,0 +1,12 @@
+program zadanie_7;
+var x,y:real;
+begin
+  x:=-5;
+  while x<=5 do
+  begin
+    if x<5 then
+      y:=3*power(x,3)-power(2,x);
+    writeln('x=' , x , '   y=' , y:5:3);
+    x:=x+0.5;
+  end;
+end.
