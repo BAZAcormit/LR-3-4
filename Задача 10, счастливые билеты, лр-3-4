@@ -1,0 +1,20 @@
+program zadacha_10;
+
+var
+  sum, i, s1, s2, s3, b: integer;
+
+begin
+  sum := 0;
+  b := 0;
+  i := 49;
+  while i <= 999 do
+  begin
+    s1 := i mod 10;
+    s2 := (i div 10) mod 10;
+    s3 := i div 100;
+    sum := s1 + s2 + s3;
+    if sum = 13 then b += 1;
+    i += 1;
+  end;
+  writeln('Счастливые билеты, у которых сумма трех цифр равна 13: ', b);
+end.
