@@ -1,0 +1,10 @@
+program kvadrat_chisel;
+var sum:real;
+begin
+  for var i:=4 to 37 do
+  begin
+    sum+=sqr(i);
+    //writeln(i , '   ', i*i , '   ' , sum );
+  end;
+  write(sum);
+end.
