@@ -1,0 +1,19 @@
+program zadacha_8;
+
+var
+  n, b: integer;
+  c: real;
+
+begin
+  write('Введите число ');
+  readln(n);
+  b := 0;
+  c := 1;
+  while n <> b do 
+  begin
+    b += 1;
+    c *= 1 / b;
+  end;
+  write('Умножение=', c);
+  
+end.
