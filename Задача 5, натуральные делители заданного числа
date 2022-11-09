@@ -1,0 +1,11 @@
+program zadanie_5;
+
+var i, n: integer;
+
+begin
+  write('Введите число ');
+  read(n);
+  for i := n downto 1 do
+    if n mod i = 0 then
+      writeln('Делители заданного числа ', i);
+end.
