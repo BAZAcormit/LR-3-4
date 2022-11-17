@@ -1,0 +1,24 @@
+program zagacha_12;
+
+var
+  s, i, um1, sum, n: integer;
+begin
+  write('Введите начало диапазона ');
+  read(i);
+  write('Введите конец диапазона ');
+  read(n);
+  um1:=1;
+  sum:=0;
+  s := i;
+  repeat
+    begin
+    if odd(s) then
+    sum+=s
+    else
+      if s<>0 then
+      um1 *= s;
+      s += 1;
+      end;
+  until (s >= n+1);
+  writeln('Умножение =', um1, ' Сумма =', sum);
+end.
