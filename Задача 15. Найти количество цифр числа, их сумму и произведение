@@ -1,0 +1,20 @@
+program zadacha;
+var chislo, ostatok, delitel, sum, umn, cifra, kolcfr:integer;
+begin
+  write('Введите число ');
+  read(chislo);
+  kolcfr:=0;
+  sum:=0;
+  umn:=1;
+  ostatok:=0;
+  delitel:=10;
+  repeat
+    ostatok := chislo mod delitel;
+    cifra := ostatok div (delitel div 10);
+    kolcfr+=1;
+    sum+=cifra;
+    umn*=cifra;
+    delitel*=10;
+  until ostatok=chislo;
+  write('Количество цифр ' ,kolcfr, ' Умножение =' ,umn, ' Сумма =' ,sum);
+end.
