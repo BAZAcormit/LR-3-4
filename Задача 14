@@ -1,0 +1,15 @@
+program zadacha_14;
+var j:integer;
+a,b:real;
+begin
+  write('Введите последовательно несколько чисел, для завершения введите 0 ');
+  b:=0;
+  j:=-1;
+  repeat
+    read(a);
+    b+=a;
+    j+=1;
+  until a=0;
+  b:=b/j;
+  writeln('Среднее арифмитическое ',b); 
+end.
